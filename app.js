@@ -7,3 +7,4 @@ console.log("Hello World");
 writeFile("fox", "fire");
 writeFile("hello.json", JSON.stringify({x:5, y:6}, null, 4));
 // 4 ist der replacer
+

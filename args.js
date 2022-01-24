@@ -3,15 +3,6 @@
 
 // command: node args.js foo bar baz
 
-// Nicht notwendig, da wir es unten voranstellen:
-// import { argv } from 'process';
-
-// argv.forEach((val, index) => {
-//     //console.log(`${index}: ${val}`),
-//     //console.log(`[${val}]`),
-//     array = [],
-//     console.log(`array.push(${val})`);
-// });
 
 const args = process.argv.slice(2);
 console.log(args);
@@ -22,3 +13,16 @@ console.log(args);
 // geht auch ohne Worte:
 const [, , ...args2] = process.argv
 console.log(args2);
+
+
+
+// Nicht notwendig, da wir es unten voranstellen:
+// import { argv } from 'process';
+
+// Andere Lösung, nicht ganz richtiger Output:
+// argv.forEach((val, index) => {
+//     //console.log(`${index}: ${val}`),
+//     //console.log(`[${val}]`),
+//     array = [],
+//     console.log(`array.push(${val})`);
+// });
