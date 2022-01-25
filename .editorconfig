@@ -11,6 +11,10 @@ insert_final_newline = true
 # Supported properties:
 trim_trailing_whitespace = true
 
+# trailing spaces in markdown indicate word wrap
+[*.md]
+trim_trailing_whitespace = false
+
 # Matches multiple files with brace expansion notation
 # Set default charset
 [*.{js,py}]
